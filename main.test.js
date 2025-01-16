@@ -41,3 +41,23 @@ test("this function returns my name and clan tag combined in the correct format"
   // Assert
   expect(act).toBe(expected);
 });
+
+test("this function throws and error when clan name contains characters that arent alphanumeric", () => {
+  // Arrange
+  let userName = "Stryker";
+  let clanTag = "SKR!";
+  // Assert
+  expect(() => addClanTagToName(userName, clanTag)).toThrow(
+    "clan_name invalid"
+  );
+});
+
+test("this function throws and error when clan name contains too many characters", () => {
+  // Arrange
+  let userName = "Stryker";
+  let clanTag = "SKRRT";
+  // Assert
+  expect(() => addClanTagToName(userName, clanTag)).toThrow(
+    "clan_name invalid"
+  );
+});
