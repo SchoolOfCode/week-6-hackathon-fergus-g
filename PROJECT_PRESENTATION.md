@@ -6,7 +6,7 @@ Link: https://github.com/SchoolOfCode/week-6-hackathon-fergus-g
 # Counter Strike: Code Katas
 
 Overview: An easy and a more challenging Kata thematically based on Counter Strike: Source
-2 of 4 challenges are provided inside this repo.
+2 of 4 challenges are provided inside this repo.  The purpose of this repo is for peers to be able to challenge themselves with katas
 
 For the other two challenges, please visit and download my teammates repo here:  
 https://github.com/SchoolOfCode/week-6-hackathon-Hannalysis  -
@@ -56,31 +56,31 @@ To check whether you have succeeded the challenge, ensure to type in the followi
 
 <h3><u>Boundary Analysis Tables</u></h3>
 
-<h4><i>damageBuff Kata</i></h4>
+<h4><i>enemyHealthCalculator Kata</i></h4>
 
 |       | Test Case                               | Input | Output |
 | ----- | --------------------------------------- | ----- | ------ |
-| TC#1  | A positive number                       | 50    | 75     |
-| TC#2  | Another positive number, higher amount  | 100   | 150    |
-| TC#3  | Another positive number, minimum amount | 1     | 1.5    |
-| TC#4  | When input is 0                         | 0     | 1.5    |
-| TC#5  | When input is negative numbers          | -33   | 1.5    |
-| TC#6  | When input number is posed as a string  | "50"  | 75     |
+| TC#1  | A pistol is used                        | Pistol| 80     |
+| TC#2  | A RPG is used                           | RPG   | 0      |
+| TC#3  | A SMG is used                           | SMG   | 95     |
+| TC#4  | No weapon is input                      | ""    | 100    |
+| TC#5  | When the gun has a negative value       | -33   | 133    |
 
 
 
 
-<h4><i>teamWeapon Kata</i></h4>
 
-|        | Test Case                            | Input           | Output                                                |
-| ------ | ------------------------------------ | --------------- | ----------------------------------------------------- |
-| TC#7   | Terrorist only weapon test 1         | "MAC-10"        | "Only Terrorists can equip the MAC-10."               |
-| TC#8   | Terrorist only weapon test 2         | "AK47"          | "Only Terrorists can equip the AK47."                 |
-| TC#9   | Counter-Terrorist only weapon test 1 | "TMP"           | "Only Counter-Terrorists can equip the TMP."          |
-| TC#10  | Counter-Terrorist only weapon test 2 | "M4A1 Carbine"  | "Only Counter-Terrorists can equip the M4A1 Carbine." |
-| TC#11  | Both teams weapon test 1             | "P90"           | "Both teams can equip the P90."                       |
-| TC#12  | Both teams weapon test 2             | "Smoke Grenade" | "Both teams can equip the Smoke Grenade."             |
-| TC#13  | A weapon neither team can equip      | "M60"           | "Neither teams can equip that weapon."                |  
+<h4><i>addClanTagToName Kata</i></h4>
+
+|	    |Test Case	                                                 |Input                 |Output|
+
+| TC#1	|Valid player name and valid clan name	                     |"ChrisMeah", "SoC"         |"ChrisMeah[SoC]"
+| TC#2	|Valid player name and invalid clan name (special characters)|"ChrisMeah", "SOC1!"	     |Throws error: "clan_name invalid"
+| TC#3	|Valid player name and invalid clan name (length > 4)	     |"ChrisMeah", "SuperClan"   |Throws error: "clan_name invalid"
+| TC#4	|Valid player name and invalid clan name (length < 4)	     |"ChrisMeah", "Cl"	         |Throws error: "clan_name invalid"
+| TC#5	|Valid player name and valid clan name (uppercase letters)   |"FaisalVordermort", "SOC1" |"FaisalVordermort[SOC1]"
+| TC#6	|Empty player name and valid clan name	                     |"", "SoC"	                 |Throws error: "player_name required"
+| TC#7	|Valid player name and empty clan name	                     |"ChrisMeah", ""	         |Throws error: "clan_name invalid" 
   
   
 ------------

@@ -61,3 +61,13 @@ test("this function throws and error when clan name contains too many characters
     "clan_name invalid"
   );
 });
+
+test("this function throws and error when player_name is empty", () => {
+  // Arrange
+  let userName = "";
+  let clanTag = "SKRT";
+  // Assert
+  expect(() => addClanTagToName(userName, clanTag)).toThrow(
+    "player_name required"
+  );
+});

@@ -18,6 +18,7 @@ export function enemyHealthCalculator(gun) {
     The clan name should be wrapped in square brackets, it must be 4 characters and they must be alphanumeric:
     Example ChrisMeah[SoC]
     Example FaisalVordermort[SOC1!] throws error "clan_name invalid"
+    Example "",[SOC] thorws error "player_name required"
     */
 
 export function addClanTagToName(player_name, clan_name) {
