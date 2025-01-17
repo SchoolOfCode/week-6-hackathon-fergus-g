@@ -7,7 +7,7 @@
   Write a function that takes in the string of the weapon you used and have it return the enemies health
   Example You used the Pistol, you would expect the enemies health to be 80
   */
-export function enemyHealthByGun(gun) {
+export function enemyHealthCalculator(gun) {
   let enemy_health = 100;
   // Your code goes here
 }
