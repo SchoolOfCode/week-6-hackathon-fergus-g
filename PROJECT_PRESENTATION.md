@@ -44,16 +44,6 @@ To check whether you have succeeded the challenge, ensure to type in the followi
 
 ------------
 
-<h3 align = "center"><u>Decision Table</u></h3>
-
-<h4 align = "center"><i>For teamWeapon Kata only</i></h4>
-
-<p align="center">
-  <img src="Small_Decision_Table_for_Hannah_Kata2.JPG" alt="Small Decision Table for 2nd Kata">
-</p>
-
-------------
-
 <h3><u>Boundary Analysis Tables</u></h3>
 
 <h4><i>enemyHealthCalculator Kata</i></h4>
