@@ -62,15 +62,15 @@ To check whether you have succeeded the challenge, ensure to type in the followi
 
 <h4><i>addClanTagToName Kata</i></h4>
 
-|	    |Test Case	                                                 |Input                 |Output|
-
-| TC#1	|Valid player name and valid clan name	                     |"ChrisMeah", "SoC"         |"ChrisMeah[SoC]"
-| TC#2	|Valid player name and invalid clan name (special characters)|"ChrisMeah", "SOC1!"	     |Throws error: "clan_name invalid"
-| TC#3	|Valid player name and invalid clan name (length > 4)	     |"ChrisMeah", "SuperClan"   |Throws error: "clan_name invalid"
-| TC#4	|Valid player name and invalid clan name (length < 4)	     |"ChrisMeah", "Cl"	         |Throws error: "clan_name invalid"
-| TC#5	|Valid player name and valid clan name (uppercase letters)   |"FaisalVordermort", "SOC1" |"FaisalVordermort[SOC1]"
-| TC#6	|Empty player name and valid clan name	                     |"", "SoC"	                 |Throws error: "player_name required"
-| TC#7	|Valid player name and empty clan name	                     |"ChrisMeah", ""	         |Throws error: "clan_name invalid" 
+|	    |Test Case	                                                 |Input                      |Output                               |
+| ----- | ---------------------------------------------------------- | --------------------      | ----------------------------------- |
+| TC#1	|Valid player name and valid clan name	                     |"ChrisMeah", "SoC"         |"ChrisMeah[SoC]"                     |
+| TC#2	|Valid player name and invalid clan name (special characters)|"ChrisMeah", "SOC1!"	     |Throws error: "clan_name invalid"    |
+| TC#3	|Valid player name and invalid clan name (length > 4)	     |"ChrisMeah", "SuperClan"   |Throws error: "clan_name invalid"    |
+| TC#4	|Valid player name and invalid clan name (length < 4)	     |"ChrisMeah", "Cl"	         |Throws error: "clan_name invalid"    |
+| TC#5	|Valid player name and valid clan name (uppercase letters)   |"FaisalVordermort", "SOC1" |"FaisalVordermort[SOC1]"             |
+| TC#6	|Empty player name and valid clan name	                     |"", "SoC"	                 |Throws error: "player_name required" |
+| TC#7	|Valid player name and empty clan name	                     |"ChrisMeah", ""	         |Throws error: "clan_name invalid"    |
   
   
 ------------
